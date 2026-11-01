@@ -5,7 +5,7 @@
   xmlns:uap="http://schemas.microsoft.com/appx/manifest/uap/windows10"
   IgnorableNamespaces="uap mp">
 
-  <Identity Name="YanshuaiChat" Publisher="CN=LumiaLightroom" Version="0.1.1.0" />
+  <Identity Name="YanshuaiChat" Publisher="CN=LumiaLightroom" Version="0.1.1.1" />
   <mp:PhoneIdentity PhoneProductId="a4c19e80-2f3b-47d1-9c58-7e6a1b02d4f5" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
 
   <Properties>

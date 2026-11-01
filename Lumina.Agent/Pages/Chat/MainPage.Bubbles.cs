@@ -383,12 +383,12 @@ namespace yanshuai
                 }
                 if (anchorIdx >= 0)
                 {
-                    var userMsg = _conv.Messages[anchorIdx];
+                    var anchorMessage = _conv.Messages[anchorIdx];
                     if (_conv.BranchPoints == null) _conv.BranchPoints = new List<BranchPoint>();
                     var bp = _conv.BranchPoints.FirstOrDefault(x => x.AnchorIndex == anchorIdx);
                     if (bp == null)
                     {
-                        bp = new BranchPoint { AnchorIndex = anchorIdx, AnchorMessageId = userMsg.Id };
+                        bp = new BranchPoint { AnchorIndex = anchorIdx, AnchorMessageId = anchorMessage.Id };
                         _conv.BranchPoints.Add(bp);
                     }
                     var snapshot = new ConversationBranch

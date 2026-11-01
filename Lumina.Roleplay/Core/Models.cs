@@ -13,6 +13,8 @@ namespace yanshuai
         [DataMember] public string Url { get; set; } = "https://api.groq.com/openai/v1/chat/completions";
         [DataMember] public string ApiKey { get; set; } = "";
         [DataMember] public string Model { get; set; } = "llama-3.3-70b-versatile";
+        /// <summary>Optional embedding model used by the shared RAG retriever.</summary>
+        [DataMember] public string EmbeddingModel { get; set; } = "";
         /// <summary>提供商类型：openai（兼容）或 claude（Anthropic 原生）</summary>
         [DataMember] public string ProviderType { get; set; } = "openai";
         /// <summary>是否支持视觉/多模态（图片）。开启后图片以 content array 发送，关闭则降级为纯文字</summary>
